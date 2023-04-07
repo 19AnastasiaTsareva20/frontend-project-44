@@ -1,5 +1,5 @@
 import { randomNumber } from '../utils.js';
-import gameProcess, { roundGame } from '../gameEntry.js';
+import gameProcess, { roundGame } from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 

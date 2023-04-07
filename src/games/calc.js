@@ -1,10 +1,10 @@
 import { randomNumber } from '../utils.js';
-import gameProcess, { roundGame } from '../gameEntry.js';
+import gameProcess, { roundGame } from '../index.js';
 
 const description = 'What is the result of the expression?';
 
 const randomOperator = () => {
-  const operators = ['+', '-', '*'];
+  const operators = ['+', '-', '*', '/'];
   const randomOperatorIndex = randomNumber(0, operators.length - 1);
   return operators[randomOperatorIndex];
 };
@@ -17,6 +17,8 @@ const calculator = (operator, num1, num2) => {
       return num1 - num2;
     case '*':
       return num1 * num2;
+    case '/':
+      return num1 / num2;
     default:
       return Error('Wrong number');
   }
