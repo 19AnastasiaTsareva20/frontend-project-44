@@ -29,8 +29,8 @@ const roundsProcess = () => {
   const secondNum = randomNumber(1, 50);
   const operator = randomOperator();
   const question = `${firstNum} ${operator} ${secondNum}`;
-  const correctAnswer = String(calculator(operator, firstNum, secondNum));
-  return [question, correctAnswer];
+  const possibleAnswer = String(calculator(operator, firstNum, secondNum));
+  return [question, possibleAnswer];
 };
 
 const startCalcGame = () => {

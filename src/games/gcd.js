@@ -13,9 +13,9 @@ const gcdGame = (num1, num2) => {
 const roundsProcess = () => {
   const firstNum = randomNumber(1, 50);
   const secondNum = randomNumber(1, 50);
-  const correctAnswer = String(gcdGame(firstNum, secondNum));
+  const possibleAnswer = String(gcdGame(firstNum, secondNum));
   const question = `${firstNum} ${secondNum}`;
-  return [question, correctAnswer];
+  return [question, possibleAnswer];
 };
 
 const startGcdGame = () => {

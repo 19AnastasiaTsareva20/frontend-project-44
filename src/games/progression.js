@@ -12,10 +12,10 @@ const roundsProcess = () => {
     progrResult.push(firstNum + i * step);
   }
   const missingNumber = randomNumber(0, progrLength - 1);
-  const correctAnswer = String(progrResult[missingNumber]);
+  const possibleAnswer = String(progrResult[missingNumber]);
   progrResult[missingNumber] = '..';
   const question = progrResult.join(' ');
-  return [question, correctAnswer];
+  return [question, possibleAnswer];
 };
 
 const startProgrGame = () => {
