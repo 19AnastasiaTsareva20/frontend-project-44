@@ -16,6 +16,7 @@ const gameProcess = (rounds, description) => {
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);
